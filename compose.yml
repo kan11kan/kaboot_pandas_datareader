@@ -1,0 +1,11 @@
+services:
+  pd_app:
+    build: .
+    container_name: 'pd_app'
+    working_dir: '/root/app'
+    tty: true
+    volumes:
+      - ./app:/root/app
+    # ports:
+    #   - 80:5004
+    #   - 8080:8080
